@@ -41,12 +41,22 @@
         transition: background 0.25s;
         
         &:hover {
-            background: #1877f2
+            background: #ff999f;
+            &.youtube {
+                background: #ff0000;
+            }
+            &.facebook {
+                background: #1877f2;
+            }
+            &.twitter {
+                background: #00acee;
+            }
+            &.instagram {
+                background: #e4405f;
+            }
+            &.linkedin {
+                background: #2991c2;
+            }
         }
     }
 }
-
-
-// li {
-//     list-style: none;
-// }
