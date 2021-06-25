@@ -22,6 +22,7 @@
     }
 
     li a {
+        // to create blocks and style them
         position: relative;
         display: inline-block;
         width: 120px;
@@ -41,7 +42,7 @@
         transition: background 0.25s;
         
         &:hover {
-            background: #ff999f;
+            // add color when you hover
             &.youtube {
                 background: #ff0000;
             }
@@ -58,5 +59,16 @@
                 background: #2991c2;
             }
         }
+        
+        // to make the logos change color
+        &.fab {
+            transition: 0.25s;
+            pointer-events: none;
+        }
+        &:hover .fab {
+            color: #fff;
+        }
+
+        
     }
 }
