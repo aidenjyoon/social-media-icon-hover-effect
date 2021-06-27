@@ -128,6 +128,13 @@ list.forEach(function (elements) {
   elements.addEventListener('mouseleave', function (event) {
     bg.style.backgroundColor = "#fff";
   });
+}); // tilt using vanilla-tilt.min.js
+
+VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+  max: 30,
+  speed: 400,
+  glare: true,
+  "max-glare": 1
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];

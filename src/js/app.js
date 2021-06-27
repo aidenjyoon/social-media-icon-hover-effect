@@ -11,3 +11,12 @@ list.forEach(elements => {
         bg.style.backgroundColor = "#fff";
     })
 })
+
+
+// tilt using vanilla-tilt.min.js
+VanillaTilt.init(document.querySelectorAll(".sci li a"), {
+    max: 30,
+    speed: 400,
+    glare: true,
+    "max-glare": 1
+});
