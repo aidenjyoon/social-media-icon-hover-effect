@@ -21,7 +21,8 @@
 
     li {
         list-style: none;
-
+        
+        // text for when hovering
         &::before {
             content: attr(data-text);
             position: absolute;
@@ -58,7 +59,7 @@
         text-decoration: none;
         margin: 20px;
         font-size: 4em;
-        transform-style: preserve-3d;
+        transform-style: preserve-3d; // needed to show the popping out effect
         perspective: 500px;
         box-shadow: 0 25px 35px rgba(0,0,0,0.1);
         transition: background 0.25s;
@@ -91,7 +92,7 @@
             color: #fff;
 
             // increase size of logo and move in z direction
-            transform: scale(1.75) translateZ(50px);
+            transform: scale(1.75) translateZ(40px);
 
         }
 

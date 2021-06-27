@@ -77,7 +77,7 @@
 }
 .sci li a:hover .fab {
   color: #fff;
-  transform: scale(1.75) translateZ(50px);
+  transform: scale(1.75) translateZ(40px);
 }
 
 .js-tilt-glare {
