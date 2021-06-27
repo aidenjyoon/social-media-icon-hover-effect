@@ -76,7 +76,8 @@
   pointer-events: none;
 }
 .sci li a:hover .fab {
-  color: #353333;
+  color: #fff;
+  transform: scale(1.75) translateZ(50px);
 }
 
 .js-tilt-glare {
