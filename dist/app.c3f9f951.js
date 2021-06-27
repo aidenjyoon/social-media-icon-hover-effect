@@ -125,6 +125,9 @@ list.forEach(function (elements) {
     var color = event.target.getAttribute('data-color');
     bg.style.backgroundColor = color;
   });
+  elements.addEventListener('mouseleave', function (event) {
+    bg.style.backgroundColor = "#fff";
+  });
 });
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
