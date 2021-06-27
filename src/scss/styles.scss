@@ -17,9 +17,30 @@
 .sci {
     position: relative;
     display: flex;
+
     li {
         list-style: none;
+
+        &::before {
+            content: attr(data-text);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, calc(-50% + 120px));
+            font-size: 14vw;
+            pointer-events: none;
+            font-weight: 700;
+            transition: 0.5s;
+            opacity: 0;          
+        }
+
+        &:hover::before {
+            opacity: 0.1;
+            transform: translate(-50%, calc(-50% + 150px));
+        }
     }
+
+
 
     li a {
         // to create blocks and style them
@@ -66,9 +87,9 @@
             pointer-events: none;
         }
         &:hover .fab {
-            color: #fff;
+            color: rgb(53, 51, 51);
         }
 
-        
     }
 }
+
